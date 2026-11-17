@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testes — A Masmorra do Pythonildo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%90%8D%3C/text%3E%3C/svg%3E">
+  <style>
+    /* O jogo roda "escondido" por baixo: os testes clicam nos botões dele, mas você só vê os resultados. */
+    #cenario, #estrelas, #hud, #palco, #modal, #toasts { visibility: hidden; position: absolute; left: -9999px; }
+    body { background: #0d0b14; color: #f1ecff; font-family: system-ui, sans-serif; padding: 16px 20px 60px; }
+    #resultado { max-width: 980px; margin: 0 auto; }
+    #resultado h1 { text-align: left; font-size: 1.6rem; }
+    #t-resumo { font-size: 1.25rem; font-weight: bold; padding: 10px 14px; border-radius: 10px; background: #1a1626; }
+    #t-resumo.bem { background: #10301c; color: #86efac; } #t-resumo.mal { background: #3b1010; color: #fca5a5; }
+    details { background: #15101f; border: 1px solid #3a3158; border-radius: 10px; margin: 10px 0; padding: 6px 12px; }
+    summary { cursor: pointer; padding: 4px 0; }
+    .bem, .mal { padding: 3px 0; font-size: .92rem; } .mal { color: #fca5a5; }
+    pre { margin: 4px 0 6px 22px; padding: 8px 10px; background: #07050f; border: 1px solid #7f1d1d; border-radius: 6px; color: #fecaca; white-space: pre-wrap; font-size: .8rem; }
+    #t-lista.so-falhas .bem { display: none; }
+    button { background: #241e36; color: #f1ecff; border: 1px solid #3a3158; border-radius: 8px; padding: 6px 12px; cursor: pointer; font: inherit; }
+    a { color: #c4b5fd; }
+  </style>
+</head>
+<body data-zona="0">
+  <div id="resultado"></div>
+  <div id="cenario" aria-hidden="true"></div>
+  <div id="estrelas"></div>
+  <header id="hud" hidden></header>
+  <main id="palco" class="palco"></main>
+  <div id="modal" hidden></div>
+  <script src="dados.js"></script>
+  <script src="eventos.js"></script>
+  <script src="deuses.js"></script>
+  <script src="cenario.js"></script>
+  <script src="desafios.js"></script>
+  <script src="sinergias.js"></script>
+  <script src="aliados.js"></script>
+  <script src="eventos2.js"></script>
+  <script src="racas.js"></script>
+  <script src="nucleo.js"></script>
+  <script src="regras.js"></script>
+  <script src="telas.js"></script>
+  <script src="mapa.js"></script>
+  <script src="combate.js"></script>
+  <script src="salas.js"></script>
+  <script src="inventario.js"></script>
+  <script src="fim.js"></script>
+  <script src="inicio.js"></script>
+  <script src="oficina.js"></script>
+  <script src="professor.js"></script>
+  <script src="musica.js"></script>
+  <script src="testes/ferramentas.js"></script>
+  <script src="testes/t_dados.js"></script>
+  <script src="testes/t_regras.js"></script>
+  <script src="testes/t_combate.js"></script>
+  <script src="testes/t_eventos.js"></script>
+  <script src="testes/t_extras.js"></script>
+  <script src="testes/t_racas.js"></script>
+  <script src="testes/t_codigo.js"></script>
+  <script src="testes/t_fumaca.js"></script>
+  <script src="testes/rodar.js"></script>
+</body>
+</html>

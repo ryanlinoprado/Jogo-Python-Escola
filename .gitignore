@@ -1,0 +1,13 @@
+# Dados da turma: são gerados pelo servidor e mudam a cada aula.
+# NÃO entram no histórico do projeto (e podem ter nomes de alunos).
+ranking.json
+oficina.json
+
+# Arquivos que o Python cria sozinho
+__pycache__/
+*.pyc
+
+# Ferramentas e sistema
+.claude/
+Thumbs.db
+.DS_Store
